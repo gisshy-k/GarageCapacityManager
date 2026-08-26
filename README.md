@@ -33,7 +33,7 @@ This mod strictly adheres to the "Vanilla Fallback Principle" to prevent save da
 * **Mod Compatibility:** Because this mod targets internal building parameters, it is **incompatible** with mods that affect roadside parking spaces (e.g., *Realistic Parking*). However, it is fully **compatible** with mods that do not target internal building parameters (e.g., *Remove Abandoned Cars*).
 
 ## ⚖️ Disclaimer
-I am not a professional engineer. This mod was built through dialogue with an AI assistant. While the implementation has been carefully considered and thoroughly tested—and I am confident in its stability—perfect operation cannot be guaranteed. Please use it at your own risk.
+I am not a professional software engineer. This mod was built through dialogue with an AI assistant. The implementation methods have been carefully considered and thoroughly tested, and I am confident it runs stably, but I cannot guarantee perfect operation in all environments. Please use it at your own risk.
 
 ---
 # Garage Capacity Manager
