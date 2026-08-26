@@ -215,10 +215,7 @@ namespace GarageCapacityManager.Systems
                 if (hasCalculated)
                 {
                     ushort newCapacity = (ushort)calculatedCapacity;
-
-                    // Fallback to Vanilla if calculation yields 0 (e.g. brand new office with no companies yet)
-                    if (newCapacity == 0) newCapacity = baseVanillaCapacity;
-
+                                     
                     if (garageLane.m_VehicleCapacity != newCapacity)
                     {
                         garageLane.m_VehicleCapacity = newCapacity;

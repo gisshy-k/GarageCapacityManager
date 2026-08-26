@@ -8,7 +8,7 @@ I created this mod to be used alongside my other mod, *Realistic Time And Traffi
 
 ## 🌟 Features
 * **Residential Scaling:** Expands garage capacity based on the building's designed number of households. The default value is 0.5 (50% of households).
-* **Workplace Scaling:** Dynamically calculates garage capacity based on the actual number of "workers" from companies currently renting the office or commercial building. The default value is 0.3 (30% of workers).
+* **Workplace Scaling:** Dynamically calculates garage capacity based on the actual number of "max workers" from companies currently renting the office or commercial building. The default value is 0.3 (30% of workers).
 * **Mixed-Use Support:** For buildings with both residential and commercial spaces, the mod seamlessly combines both capacities (Households + Workers).
 * **Full Customization:** You can easily adjust the parking allocation multipliers (0 to 1.0 = 0% to 100%) per household/worker at any time via the options menu sliders.
 
@@ -46,7 +46,7 @@ Cities: Skylines 2 の高層オフィスビルや高密度住宅は、駐車場�
 
 ## 🌟 主な機能 (Features)
 * **住宅のスケール:** 建物に設定されている設計上の世帯数に基づいてガレージ容量を拡張します。デフォルト値は0.5（世帯数の50％）です。
-* **職場のスケール:** オフィスや商業ビルに実際に入居している企業の「従業員数」に基づいてガレージ容量を動的に計算します。デフォルト値は0.3（従業員数の30％）です。
+* **職場のスケール:** オフィスや商業ビルに実際に入居している企業の「最大従業員数」に基づいてガレージ容量を動的に計算します。デフォルト値は0.3（従業員数の30％）です。
 * **複合施設への対応:** 住宅と商業スペースが混在する建物では、両方のキャパシティ（世帯数＋従業員数）を合算して適用します。
 * **自由なカスタマイズ:** オプション画面のスライダーから、1世帯あたり／1従業員あたりの駐車枠の割り当て倍率（0〜1.0 = 0％〜100％）をいつでも調整可能です。
 
