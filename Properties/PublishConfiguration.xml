@@ -2,26 +2,63 @@
 	<!--Id must be set in order to update existed mod. it is not required for publishing mod for the first time-->
 	<ModId Value="" />
 	<!--Name of the mod to display to players-->
-	<DisplayName Value="GarageCapacityManager" />
+	<DisplayName Value="Garage Capacity Manager" />
 	<!--Short description of the mod-->
-	<ShortDescription Value="This is a short description" />
+	<ShortDescription Value="Dynamically scaling garage capacities." />
 	<!--Long description of the mod. Single line or multi line. Supports minimal markdown subset-->
 	<!--LongDescription Value="This is a long description" /-->
 	<LongDescription>
-This is a long description
+	<![CDATA[
+# Garage Capacity Manager
+
+High-rise office buildings and high-density residential areas in Cities: Skylines 2 often have unrealistically small parking capacities, leading to excessive street parking.
+
+**Garage Capacity Manager** solves this by dynamically scaling garage capacities based on the number of "households" for residential buildings and "workers" for commercial/office buildings. This scaling applies exclusively to invisible internal garages inside buildings.
+
+I created this mod to be used alongside my other mod, *Realistic Time And Traffic (RTT)*, to achieve a more realistic cityscape and traffic simulation. It is also designed with compatibility in mind for mods like *MapExt* or *EconomyEX*.
+
+## 🌟 Features
+* **Residential Scaling:** Expands garage capacity based on the building's designed number of households. The default value is 0.5 (50% of households).
+* **Workplace Scaling:** Dynamically calculates garage capacity based on the actual number of "max workers" from companies currently renting the office or commercial building. The default value is 0.3 (30% of workers).
+* **Mixed-Use Support:** For buildings with both residential and commercial spaces, the mod seamlessly combines both capacities (Households + Workers).
+* **Full Customization:** You can easily adjust the parking allocation multipliers (0 to 1.0 = 0% to 100%) per household/worker at any time via the options menu sliders.
+
+## ⚠️ IMPORTANT: Timing Constraints for Capacity Scaling
+To completely eliminate any negative impact on simulation performance (CPU load), **there are intentional constraints on when scaling is applied**. In all cases below, **the new capacities will be applied the next time you load your save game, or whenever you adjust the sliders in the options menu**.
+* **New Commercial/Offices:** Immediately after a commercial or office building is constructed, it may temporarily be assigned the vanilla initial parking capacity.
+* **Building Level-Ups:** When a building levels up, the capacity changes will not be reflected instantly.
+
+## 🛑 CRITICAL: Safe Uninstallation Instructions (Save Data Protection)
+This mod strictly adheres to the "Vanilla Fallback Principle" to prevent save data corruption. However, due to how the game engine saves data, **you MUST follow these steps if you wish to uninstall (unsubscribe from) the mod:**
+1. Launch the game and go to Options > Garage Capacity Manager.
+2. Toggle **"Enable Garage Capacities"** to **OFF**.
+3. Unpause the game and let the simulation run for a few seconds. The mod will safely restore all garage capacities in your city back to their original vanilla state.
+4. **Save your game**.
+5. You may now safely unsubscribe/uninstall the mod.
+
+*Note: If you unsubscribe and load your game without following these steps, your game will still run fine, but existing buildings will permanently retain their modified (massive) garage capacities (until they level up or are rebuilt, at which point they will return to vanilla values).*
+
+## 🤝 Compatibility & Safety
+* **Safe to add/remove mid-game:** Yes, completely safe (provided you follow the steps above).
+* **Performance Impact:** Minimal to none. We have entirely eliminated unnecessary background tracking processes.
+* **Mod Compatibility:** Because this mod targets internal building parameters, it is **incompatible** with mods that affect roadside parking spaces (e.g., *Realistic Parking*). However, it is fully **compatible** with mods that do not target internal building parameters (e.g., *Remove Abandoned Cars*).
+
+## ⚖️ Disclaimer
+I am not a professional software engineer. This mod was built through dialogue with an AI assistant. The implementation methods have been carefully considered and thoroughly tested, and I am confident it runs stably, but I cannot guarantee perfect operation in all environments. Please use it at your own risk.
+	]]>
 	</LongDescription>
 	<!--Thumbnail-->
-	<Thumbnail Value="Properties/Thumbnail.png" />
+	<Thumbnail Value="Properties/Thumbnail.jpg" />
 	<!--Screenshot, can be set multiple times-->
-	<Screenshot Value="" />
+	<Screenshot Value="Properties/garagecapacityimage.jpg" />
 	<!--Tag, can be set multiple times-->
 	<Tag Value="" />
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="" />
 	<!--Version of the mod-->
-	<ModVersion Value="1.0" />
+	<ModVersion Value="1.0.0" />
 	<!--Recommended version of the base game to use the mod-->
-	<GameVersion Value="1.0.*" />
+	<GameVersion Value="1.6.*" />
 	<!--Dependency for the mod, can be set multiple times-->
 	<Dependency Id="" />
 	<!--Required DLC, can be set multiple times. Supported values are "Landmark Buildings", "San Fransisco Set", "Beach Properties", "Urban Promenades", "Modern Architecture"-->
@@ -29,9 +66,10 @@ This is a long description
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
 	<ChangeLog Value="" />
 	<!--<ChangeLog>
+	Initial release
 	</ChangeLog>-->
 	<!--External link, can be set multiple times. supported types are "discord", "github", "youtube", "twitch", "x", "paypal", "patreon", "buymeacoffee", "kofi", "crowdin", "gitlab", "gofundme"-->
-	<ExternalLink Type="" Url="" />
+	<ExternalLink Type="github" Url="https://github.com/gisshy-k/GarageCapacityManager/" />
 	<!--Supported values Public, Private, Unlisted-->
 	<AccessLevel Value="Public" />
 </Publish>
