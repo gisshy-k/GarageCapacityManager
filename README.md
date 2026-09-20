@@ -32,7 +32,7 @@ This mod strictly adheres to the "Vanilla Fallback Principle" to prevent save da
 * **Performance Impact:** Minimal to none. We have entirely eliminated unnecessary background tracking processes.
 * **Mod Compatibility:** Because this mod targets internal building parameters, it is incompatible with mods that modify those parameters (e.g., Realistic Parking). However, it is fully with mods that only affect roadside or outdoor parking spaces (e.g., Remove Abandoned Cars).
 
-## 💡 Credits and inspiration
+## 💡 Credits & inspiration
 Garage Capacity Manager was inspired by *Realistic Parking* by Dancing Banana.
 To ensure compatibility with mods like *MapExt* and *Economy EX*, I decided to create this mod as my own independently developed implementation, focusing strictly on expanding building garage capacities. Special thanks to Dancing Banana for the original *Realistic Parking* mod and for the inspiration behind this project.
 
