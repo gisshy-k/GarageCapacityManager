@@ -30,7 +30,7 @@ This mod strictly adheres to the "Vanilla Fallback Principle" to prevent save da
 ## 🤝 Compatibility & Safety
 * **Safe to add/remove mid-game:** Yes, completely safe (provided you follow the steps above).
 * **Performance Impact:** Minimal to none. We have entirely eliminated unnecessary background tracking processes.
-* **Mod Compatibility:** Because this mod targets internal building parameters, it is incompatible with mods that modify those parameters (e.g., Realistic Parking). However, it is fully with mods that only affect roadside or outdoor parking spaces (e.g., Remove Abandoned Cars).
+* **Mod Compatibility:** Because this mod targets internal building parameters, it is incompatible with mods that modify those parameters (e.g., Realistic Parking). However, it is fully compatible with mods that only affect roadside or outdoor parking spaces (e.g., Remove Abandoned Cars).
 
 ## 💡 Credits & inspiration
 Garage Capacity Manager was inspired by *Realistic Parking* by Dancing Banana.
