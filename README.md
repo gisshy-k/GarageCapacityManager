@@ -30,7 +30,11 @@ This mod strictly adheres to the "Vanilla Fallback Principle" to prevent save da
 ## 🤝 Compatibility & Safety
 * **Safe to add/remove mid-game:** Yes, completely safe (provided you follow the steps above).
 * **Performance Impact:** Minimal to none. We have entirely eliminated unnecessary background tracking processes.
-* **Mod Compatibility:** Because this mod targets internal building parameters, it is **incompatible** with mods that affect roadside parking spaces (e.g., *Realistic Parking*). However, it is fully **compatible** with mods that do not target internal building parameters (e.g., *Remove Abandoned Cars*).
+* **Mod Compatibility:** Because this mod targets internal building parameters, it is incompatible with mods that modify those parameters (e.g., Realistic Parking). However, it is fully with mods that only affect roadside or outdoor parking spaces (e.g., Remove Abandoned Cars).
+
+## 💡 Credits and inspiration
+Garage Capacity Manager was inspired by *Realistic Parking* by Dancing Banana.
+To ensure compatibility with mods like *MapExt* and *Economy EX*, I decided to create this mod as my own independently developed implementation, focusing strictly on expanding building garage capacities. Special thanks to Dancing Banana for the original *Realistic Parking* mod and for the inspiration behind this project.
 
 ## ⚖️ Disclaimer
 I am not a professional software engineer. This mod was built through dialogue with an AI assistant. The implementation methods have been carefully considered and thoroughly tested, and I am confident it runs stably, but I cannot guarantee perfect operation in all environments. Please use it at your own risk.
@@ -68,7 +72,11 @@ Cities: Skylines 2 の高層オフィスビルや高密度住宅は、駐車場�
 ## 🤝 互換性と安全性
 * **途中導入・途中削除:** 完全に安全です（上記の手順を守った場合）。
 * **パフォーマンスへの影響:** バックグラウンドでの不要な常時監視プロセスを完全に排除しているため、極小です。
-* **他のMODとの互換性:** 建物の内部パラメータのみをターゲットにしているため、道路脇の駐車スペースに影響を与えるMOD（例：*Realistic Parking* など）との併用はできません。一方で、建物の内部パラメータをターゲットにしていないMOD（例：*Remove Abandoned Cars* など）とは併用が可能です。
+* **他のMODとの互換性:** 建物の内部パラメータのみをターゲットにしているため、それらのパラメーターを変更するMOD（例：Realistic Parking）とは互換性がありません。一方で、ロードサイドや屋外の駐車スペースに影響を与えるMOD（例：Remove Abandoned Cars）とは併用が可能です。
+
+## 💡 クレジットとインスピレーション
+このMODは、私が長らく使用していた Dancing Banana 氏による「Realistic Parking」からインスピレーションを得て作成されました。
+『MapExt』や『Economy EX』との互換性を確保するため、駐車場の容量を拡大する機能に限定し、独自に実装方式を見直して開発したものです。本プロジェクトのきっかけとなったオリジナルMODを作成してくれた Dancing Banana 氏に特別な感謝を表します。
 
 ## ⚖️ 免責事項
 私は本職のエンジニアではありません。このMODはAIをアシスタントとした対話によって構築されました。実装方法は詳細に検討し、動作テストも行っており安定的に動くと確信していますが、動作を完全に保証するものではありません。自己責任でのご利用をお願いいたします。
